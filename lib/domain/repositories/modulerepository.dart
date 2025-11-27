@@ -1,7 +1,6 @@
 import 'package:dartz/dartz.dart';
 import '../entities/module.dart';
 import '../entities/lesson.dart';
-import '../entities/quiz.dart';
 import '../failures/failure.dart';
 
 abstract class ModuleRepository {

@@ -1,7 +1,9 @@
 import 'package:dartz/dartz.dart';
+
+import '../entities/lesson.dart';
 import '../entities/module.dart';
 import '../failures/failure.dart';
-import '../repositories/module_repository.dart';
+import '../repositories/modulerepository.dart';
 
 class GetModules {
   final ModuleRepository repository;
@@ -13,12 +15,6 @@ class GetModules {
   }
 }
 
-// filepath: lib/domain/usecases/get_module_by_id.dart
-import 'package:dartz/dartz.dart';
-import '../entities/module.dart';
-import '../failures/failure.dart';
-import '../repositories/module_repository.dart';
-
 class GetModuleById {
   final ModuleRepository repository;
 
@@ -28,12 +24,6 @@ class GetModuleById {
     return repository.getModuleById(moduleId);
   }
 }
-
-// filepath: lib/domain/usecases/get_lesson.dart
-import 'package:dartz/dartz.dart';
-import '../entities/lesson.dart';
-import '../failures/failure.dart';
-import '../repositories/module_repository.dart';
 
 class GetLesson {
   final ModuleRepository repository;
@@ -45,12 +35,6 @@ class GetLesson {
   }
 }
 
-// filepath: lib/domain/usecases/create_or_update_module.dart
-import 'package:dartz/dartz.dart';
-import '../entities/module.dart';
-import '../failures/failure.dart';
-import '../repositories/module_repository.dart';
-
 class CreateOrUpdateModule {
   final ModuleRepository repository;
 
@@ -60,11 +44,6 @@ class CreateOrUpdateModule {
     return repository.createOrUpdateModule(module);
   }
 }
-
-// filepath: lib/domain/usecases/delete_module.dart
-import 'package:dartz/dartz.dart';
-import '../failures/failure.dart';
-import '../repositories/module_repository.dart';
 
 class DeleteModule {
   final ModuleRepository repository;
